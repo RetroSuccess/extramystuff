@@ -242,6 +242,9 @@
       width: 100%;
     }
   </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
   <header>
@@ -260,8 +263,8 @@
   <div class="container">
     <section class="hero">
       <h1>Welcome to the Future</h1>
-      <p>Innovative solutions for modern businesses. Experience the power of cutting-edge technology.</p>
-      <a href="#" class="btn">Get Started Today</a>
+      <p id="myp">Innovative solutions for modern businesses. Experience the power of cutting-edge technology.</p>
+      <button class="btn" id="gets">Get Started Today</button>
     </section>
 
     <section class="features-section">
@@ -269,7 +272,7 @@
       <div class="features">
         <div class="feature">
           <h3>Lightning Fast</h3>
-          <p>Optimized performance that delivers results at the speed of light. Experience improved efficiency.</p>
+          <p id="T">Optimized performance that delivers results at the speed of light. Experience improved efficiency.</p>
         </div>
         <div class="feature">
           <h3>Secure & Safe</h3>
@@ -296,71 +299,58 @@
       <p>Our commitment to excellence and customer success has made us a trusted partner for businesses of all sizes, from startups to Fortune 500 companies.</p>
     </section>
 
-    <section class="team-section">
-      <h2>Meet Our Team</h2>
-      <div class="team-members">
-        <div class="team-member">
-          <div class="initials">AS</div>
-          <h3>Alex Smith</h3>
-          <p>Chief Technology Officer</p>
-        </div>
-        <div class="team-member">
-          <div class="initials">MJ</div>
-          <h3>Maria Johnson</h3>
-          <p>Lead Designer</p>
-        </div>
-        <div class="team-member">
-          <div class="initials">RD</div>
-          <h3>Robert Davis</h3>
-          <p>Senior Developer</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
+    <form onsubmit="return validateForm()">
   <section class="contact-section">
     <h2 style="color: white;">Get In Touch</h2>
     <div class="contact-form">
       <div class="form-group">
         <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your full name" />
+        <input type="text" id="name" name="fullname" placeholder="Enter your full name" />
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email" />
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
       </div>
       <div class="form-group">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number" />
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
       </div>
       <div class="form-group">
-        <label for="">Choose qualification</label>
-        <select name="" id="">
+        <label for="qualification">Choose qualification</label>
+        <select id="qualification" name="qualification">
           <option value="none">-Choose qualification-</option>
           <option value="BSC">BSC</option>
           <option value="DIT">DIT</option>
           <option value="HCIT">HCIT</option>
         </select>
       </div>
-        <label for="hobies"><b>Choose hobies</b></label><br><br>
-        <label for="hobies"><input type="checkbox" id="">Basket ball</label>
-        <label for="hobies"><input type="checkbox" id="">Tennis</label>
-        <label for="hobies"><input type="checkbox" id="">Boxing</label>
-        <label for="hobies"><input type="checkbox" id="">Swiming</label>
-        <label for="hobies"><input type="checkbox" id="">Hocky</label>
-        <br><br>
-        <label for="gender"><b>Choose gender</b></label><br>
-        <label for="gender" name="Male"><input type="radio">Male</label>
-        <label for="gender" name="Female"><input type="radio">Female</label><br><br>
-        <label for="">Load Id</label><br>
-        <input type="file">
+
+        <label><b>Choose hobbies</b></label><br>
+        <label><input type="checkbox" name="hobbies" value="Basketball" /> Basketball</label>
+        <label><input type="checkbox" name="hobbies" value="Tennis" /> Tennis</label>
+        <label><input type="checkbox" name="hobbies" value="Boxing" /> Boxing</label>
+        <label><input type="checkbox" name="hobbies" value="Swimming" /> Swimming</label>
+        <label><input type="checkbox" name="hobbies" value="Hockey" /> Hockey</label><br><br>
+        <label><b>Choose gender</b></label><br>
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+
+      <div class="form-group">
+        <label for="file">Load ID</label>
+        <input type="file" id="file" name="fileUpload" />
+      </div>
+
       <div class="form-group">
         <label for="message">Message</label>
-        <textarea id="message" placeholder="Tell us about your project"></textarea>
+        <textarea id="message" name="message" placeholder="Tell us about your project"></textarea>
       </div>
-      <button type="submit" class="btn">Send Message</button>
+
+      <button type="submit" class="btn" onclick="validateForm()">Send Message</button><br><br>
+      <button type="reset" class="btn">Reset</button><br><br>
+      <button id="change" class="btn">Change</button>
     </div>
   </section>
+</form>
 
   <footer>
     <div class="container">
@@ -378,4 +368,36 @@
     </div>
   </footer>
 </body>
+
+<script>
+  function validateForm() {
+    let myname = document.getElementById("name").value;
+    let myemail = document.getElementById("email").value;
+
+    if (myname === "" || myemail === "") {
+      alert("Please fill in all required fields.");
+      return false;
+    } else if (!myemail.includes("@")) {
+      alert("Enter a valid email address.");
+      return false;
+    } else {
+      alert("Form submitted successfully by " + myname + "!");
+      return true;
+    }
+  }
+
+  //jquery below
+
+  $("#change").click(function(){
+    $("#myp").css("color","red");
+    $("#myp").text("Heloo");
+  })
+
+  $("#gets").click(function(){
+    $("#T").text("Change name")
+  })
+
+</script>
+
+
 </html>
