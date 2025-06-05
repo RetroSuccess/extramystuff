@@ -1,321 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSolutions - Welcome to the Future</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-            border-bottom: 1px solid #e1e1e1;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 600;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #3498db;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #e1e1e1;
-            margin: 30px 0;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 0;
-        }
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #3498db;
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        h3 {
-            color: #16a085;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin: 50px 0;
-        }
-        .feature {
-            background-color: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .feature h3 {
-            margin-top: 0;
-            color: #2c3e50;
-        }
-        .about-section {
-            margin: 60px 0;
-            padding: 40px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-        }
-        .about-section h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-        .innovation {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #16a085;
-            margin: 30px 0;
-            text-align: center;
-        }
-        .team-section {
-            margin: 60px 0;
-        }
-        .team-section h2 {
-            text-align: center;
-        }
-        .team-members {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .team-member {
-            text-align: center;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-        }
-        .team-member h3 {
-            color: #2c3e50;
-            margin: 10px 0 5px;
-        }
-        .initials {
-            font-size: 2em;
-            font-weight: bold;
-            color: #3498db;
-            margin-bottom: 10px;
-        }
-        .contact-section {
-            margin: 60px 0;
-        }
-        .contact-section h2 {
-            text-align: center;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-        .form-group textarea {
-            height: 120px;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 0;
-            margin-top: 60px;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .footer-links {
-            display: flex;
-            gap: 20px;
-        }
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        .copyright {
-            margin-top: 20px;
-            text-align: center;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechSolutions - Welcome to the Future</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: #6a11cb;
+      padding: 20px 0;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: underline;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #3498db;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #e1e1e1;
+      margin: 30px 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgb(112, 0, 204);
+      color: white;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+    h3 {
+      color: #16a085;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: white;
+      color: #6a11cb;
+      padding: 12px 35px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .features-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+    .feature h3 {
+      color: #6a11cb;
+    }
+
+    .about-section {
+      margin: 60px 0;
+      padding: 40px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+    }
+    .about-section h2 {
+      color: #2c3e50;
+      padding-bottom: 10px;
+      display: inline-block;
+    }
+    .about-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-flex p {
+  flex: 1;
+}
+
+.innovation {
+  width: auto;
+  white-space: nowrap;
+}
+    .innovation {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: white;
+      margin: 30px 0;
+      text-align: center;
+      background-color: purple;
+      padding: 50px;
+      padding-bottom: 80px;
+      padding-top: 70px;
+      width: 250px;
+    }
+
+    .team-section {
+      margin: 60px 0;
+      text-align: center;
+    }
+    .team-members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .team-member {
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .initials {
+      background-color: #6a11cb;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+    }
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+    .contact-form .btn {
+      width: 105%;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: white;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    .form-group textarea {
+      height: 120px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      padding: 40px 0;
+    }
+    .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+  }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .copyright {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Team</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
-    </header>
-
+  <header>
     <div class="container">
-        <hr>
-
-        <section class="hero">
-            <h1>Welcome to the Future</h1>
-            <p>Innovation solutions for modern businesses. Experience the power of cutting-edge technology.</p>
-            <a href="#" class="btn">Get Started Today</a>
-        </section>
-
-        <hr>
-
-        <section class="features-section">
-            <h2>Our Features</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>Lightning Fast</h3>
-                    <p>Optimized performance that delivers results at the speed of light. Experience improvement efficiency.</p>
-                </div>
-                <div class="feature">
-                    <h3>Scuare & Safe</h3>
-                    <p>Emerging wide security with advanced encryption. Your data is protected with military user protection.</p>
-                </div>
-                <div class="feature">
-                    <h3>Mobile Ready</h3>
-                    <p>Responsive energy that works perfectly on a Internet Access port and other smartware services.</p>
-                </div>
-                <div class="feature">
-                    <h3>Smart Analytics</h3>
-                    <p>All powered insights that drive intelligent business decisions. The terms data into software intelligence.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section">
-            <h2>About Our Company</h2>
-            <p>We are pleased in digital transformation, helping businesses navigate the complete landscape of modern technology. Our innovative solutions have empowered thousands of companies worldwide.</p>
-            <p>With one's dedicated experience, we combine cutting-edge technology with deep challenges and innovative solutions that not only meet today's challenges but anticipate tomorrow's opportunities.</p>
-            <p>Our commitment to excellence and customer success has made us a trusted partner for businesses of all sizes, from starting to Fortune 500 companies.</p>
-            <div class="innovation">Innovation</div>
-        </section>
-
-        <section class="team-section">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="initials">AS</div>
-                    <h3>Alan Smith</h3>
-                    <p>Old Yesterday Other</p>
-                </div>
-                <div class="team-member">
-                    <div class="initials">MJ</div>
-                    <h3>Mark Johnson</h3>
-                    <p>Last Designer</p>
-                </div>
-                <div class="team-member">
-                    <div class="initials">RD</div>
-                    <h3>Robert Davis</h3>
-                    <p>Josef Donitzer</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <h2>Get In Touch</h2>
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Enter your full name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Tell us about your project"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </div>
-        </section>
+      <nav>
+        <h6>TechSolutions</h6>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <footer style="background-color: black;">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Support</a>
-                    <a href="#">Careers</a>
-                </div>
-                <div class="copyright">
-                    &copy; 2004 TechSolutions. All rights reserved.
-                </div>
-            </div>
+  <div class="container">
+    <section class="hero">
+      <h1>Welcome to the Future</h1>
+      <p>Innovative solutions for modern businesses. Experience the power of cutting-edge technology.</p>
+      <a href="#" class="btn">Get Started Today</a>
+    </section>
+
+    <section class="features-section">
+      <h2>Our Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Lightning Fast</h3>
+          <p>Optimized performance that delivers results at the speed of light. Experience improved efficiency.</p>
         </div>
-    </footer>
+        <div class="feature">
+          <h3>Secure & Safe</h3>
+          <p>Enterprise-grade security with advanced encryption. Your data is protected with military-level protocols.</p>
+        </div>
+        <div class="feature">
+          <h3>Mobile Ready</h3>
+          <p>Responsive designs that work seamlessly across all devices, apps, solutions, anywhere, anytime.</p>
+        </div>
+        <div class="feature">
+          <h3>Smart Analytics</h3>
+          <p>A powered insight that drives intelligent business decisions. Transform data into actionable intelligence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>About Our Company</h2>
+      <p>We are pioneers in digital transformation, helping businesses navigate the complex landscape of modern technology. Our innovative solutions have empowered thousands of companies worldwide.</p>
+    <div class="about-flex"> 
+      <p>With decades of experience, we combine cutting-edge technology with deep insights and innovative strategies that not only meet today’s challenges but anticipate tomorrow’s opportunities.</p>
+      <div class="innovation">Innovation</div>
+    </div> 
+      <p>Our commitment to excellence and customer success has made us a trusted partner for businesses of all sizes, from startups to Fortune 500 companies.</p>
+    </section>
+
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <div class="initials">AS</div>
+          <h3>Alex Smith</h3>
+          <p>Chief Technology Officer</p>
+        </div>
+        <div class="team-member">
+          <div class="initials">MJ</div>
+          <h3>Maria Johnson</h3>
+          <p>Lead Designer</p>
+        </div>
+        <div class="team-member">
+          <div class="initials">RD</div>
+          <h3>Robert Davis</h3>
+          <p>Senior Developer</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="contact-section">
+    <h2 style="color: white;">Get In Touch</h2>
+    <div class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" />
+      </div>
+      <div class="form-group">
+        <label for="">Choose qualification</label>
+        <select name="" id="">
+          <option value="none">-Choose qualification-</option>
+          <option value="BSC">BSC</option>
+          <option value="DIT">DIT</option>
+          <option value="HCIT">HCIT</option>
+        </select>
+      </div>
+        <label for="hobies"><b>Choose hobies</b></label><br><br>
+        <label for="hobies"><input type="checkbox" id="">Basket ball</label>
+        <label for="hobies"><input type="checkbox" id="">Tennis</label>
+        <label for="hobies"><input type="checkbox" id="">Boxing</label>
+        <label for="hobies"><input type="checkbox" id="">Swiming</label>
+        <label for="hobies"><input type="checkbox" id="">Hocky</label>
+        <br><br>
+        <label for="gender"><b>Choose gender</b></label><br>
+        <label for="gender" name="Male"><input type="radio">Male</label>
+        <label for="gender" name="Female"><input type="radio">Female</label><br><br>
+        <label for="">Load Id</label><br>
+        <input type="file">
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us about your project"></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Support</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="copyright">
+          &copy; 2025 TechSolutions. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
